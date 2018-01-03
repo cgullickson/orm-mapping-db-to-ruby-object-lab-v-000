@@ -82,7 +82,7 @@ class Student
     LIMIT 1
     SQL
 
-    DB[:conn].execute(sql)[0]
+    student = DB[:conn].execute(sql)[0]
     self.new_from_db(student)
   end
 
