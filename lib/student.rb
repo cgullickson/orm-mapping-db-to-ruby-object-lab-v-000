@@ -90,9 +90,9 @@ class Student
     SELECT *
     FROM students
     WHERE grade = 10
-    LIMIT n
+    LIMIT ?
     SQL
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql,x)
   end
 end
